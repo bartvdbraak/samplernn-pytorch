@@ -3,17 +3,20 @@
 set -x
 
 if [ "$#" -ne 2 ]; then
-    echo "Usage: $0 <chunk size in seconds> <preprocess path>"
+    echo "Usage: $0 <chunk size in seconds> <preprocess path> <optional: channels:1> <optional: audio bitrate:16k> <optional: audio sampling rate:16000>"
     echo "Example usage: $0 8 techno"
     exit
 fi
 
 chunk_size=$1
 dataset_path=$2
+audio_channels=${3:-1}
+audio_bitrate=${4:-16k}
+audio_sampling_rate=${5:-16000}
 
 cd preprocess/"${dataset_path}"
 
-for i in *.mp3 *.ogg *.flac
+for i in *.mp3 *.ogg *.flac *.wav
 do
   ffmpeg -i "$i" -ac 1 -ab 16k -ar 16000 "$i.wav"
 done
