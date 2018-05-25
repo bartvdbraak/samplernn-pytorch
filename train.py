@@ -30,18 +30,18 @@ import argparse
 
 default_params = {
     # model parameters
-    'n_rnn': 1,
+    'n_rnn': 5,
     'dim': 1024,
     'learn_h0': True,
     'q_levels': 256,
     'seq_len': 1024,
     'weight_norm': True,
     'batch_size': 128,
-    'val_frac': 0.1,
-    'test_frac': 0.1,
+    'val_frac': 0.6,
+    'test_frac': 0.6,
 
     # training parameters
-    'keep_old_checkpoints': False,
+    'keep_old_checkpoints': True,
     'datasets_path': 'datasets',
     'results_path': 'results',
     'epoch_limit': 1000,
@@ -51,7 +51,7 @@ default_params = {
     'sample_length': 80000,
     'loss_smoothing': 0.99,
     'cuda': True,
-    'comet_key': None
+    'comet_key': 'ttDcDYc6bwGjdmKcsLytSOslZ'
 }
 
 tag_params = [

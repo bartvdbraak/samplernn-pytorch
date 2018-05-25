@@ -1,6 +1,8 @@
 # personal
 results/
 *.DS_Store
+datasets/*
+!datasets/*.sh
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
