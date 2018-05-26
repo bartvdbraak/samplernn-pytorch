@@ -36,7 +36,7 @@ default_params = {
     'q_levels': 256,
     'seq_len': 1024,
     'weight_norm': True,
-    'batch_size': 64,
+    'batch_size': 128,
     'val_frac': 0.06,
     'test_frac': 0.06,
 
