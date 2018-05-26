@@ -30,15 +30,15 @@ import argparse
 
 default_params = {
     # model parameters
-    'n_rnn': 5,
+    'n_rnn': 1,
     'dim': 1024,
     'learn_h0': True,
     'q_levels': 256,
     'seq_len': 1024,
     'weight_norm': True,
-    'batch_size': 128,
-    'val_frac': 0.6,
-    'test_frac': 0.6,
+    'batch_size': 64,
+    'val_frac': 0.06,
+    'test_frac': 0.06,
 
     # training parameters
     'keep_old_checkpoints': True,
