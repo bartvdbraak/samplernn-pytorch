@@ -41,7 +41,7 @@ default_params = {
     'test_frac': 0.06,
 
     # training parameters
-    'keep_old_checkpoints': True,
+    'keep_old_checkpoints': False,
     'datasets_path': 'datasets',
     'results_path': 'results',
     'epoch_limit': 1000,
